@@ -9,18 +9,16 @@
 </head>
 <body>
     <header>
-        
+        <h1 class="hidden">Mini Cooper App</h1>
+        <h2>Mini Models</h2>
     </header>
     <main id="app">
-        <h1 class="hidden">Mini App</h1>
         <div>
-            <h2 class="Model-name">Mini Models</h2>
-            <mini-data v-for="tbl_minis in miniCoopers" :tbl_minis="tbl_minis" :key=tbl_minis.id></mini-data>
-            
+            <mini-data class="mini-data" v-for="tbl_minis in miniCoopers" :tbl_minis="tbl_minis" :key=tbl_minis.id></mini-data>
         </div>
     </main>
     <footer>
-
+        <div><p>Mini Cooper App Build</p></div>
     </footer>
 </body>
 <script src="js/main.js" type="module"></script>
