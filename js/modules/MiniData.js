@@ -15,8 +15,7 @@ export default {
             Safety: this.tbl_minis.Safety,
             FuelEfficiency: this.tbl_minis.FuelEfficiency,
             Image: this.tbl_minis.Image,
-            showDetails: "More Details",
-            hideDetails: "Hide Details",
+            showDetails: "more details",
             Details: " ",
             hideDescription: " "
             }
@@ -26,7 +25,7 @@ export default {
             `<section @click="selectModel">
                 <h2 class="Model-name">{{ tbl_minis.Model }}</h2>
                 <img :src="'images/' + tbl_minis.Image" alt="Model Image">
-                <p class="miniFeatures">Exterior: {{ Exterior }}<br> Interior: {{ Interior }}<br> Performance: {{ Performance }}<br> Connectivity: {{ Connectivity }}<br> Safety: {{ Safety }}<br> Fuel-Efficiency: {{ FuelEfficiency }}</p>
+                <p class="miniFeatures">Exterior: {{ Exterior }}<br><br> Interior: {{ Interior }}<br><br> Performance: {{ Performance }}<br><br> Connectivity: {{ Connectivity }}<br><br> Safety: {{ Safety }}<br><br> Fuel-Efficiency: {{ FuelEfficiency }}</p>
                 <p @click="showDescription" class="detailsButton">{{ showDetails }}</p>
                 <p class="miniDesc">{{ hideDescription }}</p>
             </section>`,
