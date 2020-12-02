@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Mini App</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main id="app">
+        <h1 class="hidden">Mini App</h1>
+        <div>
+            <h2 class="Model-name">Mini Models</h2>
+            <mini-data v-for="tbl_minis in miniCoopers" :tbl_minis="tbl_minis" :key=tbl_minis.id></mini-data>
+            
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="js/main.js" type="module"></script>
+</html>
