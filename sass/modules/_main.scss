@@ -1,0 +1,86 @@
+@media screen and (max-width: 767px) {
+    main {
+        font-family: $main-font;
+        color: $main-text-colour;
+        div {
+            padding: 10px;
+            .Model-name {
+                font-size: $main-header-size;
+                margin-left: 40%;
+                margin-top: 40px;
+            }
+
+            .mini-data {
+                border-top: 5px solid black;
+                margin-bottom: 10px;
+                font-size: $main-font-size;
+                img {
+                    margin-left: 40%;
+                    margin-bottom: 10px;
+                }
+
+                .miniFeatures {
+                    font-size: $alt-font-size;
+                }
+
+                .detailsButton {
+                    margin-left: 50%;
+                    margin-right: 35%;
+                    font-variant: small-caps;
+                    background-color: lightgrey;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+
+                .detailsButton:hover {
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    main {
+        font-family: $main-font;
+        color: $main-text-colour;
+        div {
+            padding: 10px;
+            .Model-name {
+                font-size: $main-header-size;
+                margin-left: 10px;
+                margin-top: 40px;
+            }
+
+            .mini-data {
+                border-top: 5px solid black;
+                margin-bottom: 10px;
+                font-size: $main-font-size;
+                img {
+                    margin-left: 40%;
+                    margin-bottom: 10px;
+                }
+
+                .miniFeatures {
+                    margin-left: 10px;
+                    font-size: $alt-font-size;
+                }
+
+                .detailsButton {
+                    margin-left: 10px;
+                    margin-right: 90%;
+                    font-variant: small-caps;
+                    background-color: lightgrey;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+
+                .detailsButton:hover {
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}
