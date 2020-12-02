@@ -24,6 +24,7 @@ export default {
         template:
             `<section @click="selectModel">
                 <h2 class="Model-name">{{ tbl_minis.Model }}</h2>
+                <p class="price-tag">({{ Price }})</p>
                 <img :src="'images/' + tbl_minis.Image" alt="Model Image">
                 <p class="miniFeatures">Exterior: {{ Exterior }}<br><br> Interior: {{ Interior }}<br><br> Performance: {{ Performance }}<br><br> Connectivity: {{ Connectivity }}<br><br> Safety: {{ Safety }}<br><br> Fuel-Efficiency: {{ FuelEfficiency }}</p>
                 <p @click="showDescription" class="detailsButton">{{ showDetails }}</p>
